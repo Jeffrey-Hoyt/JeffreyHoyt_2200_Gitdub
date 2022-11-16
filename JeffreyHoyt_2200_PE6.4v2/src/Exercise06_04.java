@@ -1,5 +1,5 @@
 /* Jeffrey Hoyt
- * [M]11/14/2022
+ * [W]11/16/2022
  */
 import java.util.Scanner;
 public class Exercise06_04 {
@@ -12,13 +12,16 @@ public class Exercise06_04 {
 		input.close();
 	}
 	public static void reverse(int num) {
+		if (num < 0){
+			System.out.print("-");
+			num = num * -1;
+		}
 		if (num == 0) {
 			System.out.println("0");
-		}else {
+		}else
 		while (num != 0) {
 			System.out.print(num % 10);
 			num = num / 10;
-		}
 		}
 	}
 }
